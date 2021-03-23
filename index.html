@@ -25,6 +25,10 @@ body {
   background-size: cover;
   height: 100%;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 .avatar {
   margin-top: auto;
   margin-bottom: auto;
@@ -71,6 +75,12 @@ img {
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+    <button onclick="myFunction()">Toggle dark mode</button>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script></script>
   </body>
 </html>
